@@ -24,7 +24,7 @@ class _LoginPageState extends State<LoginPage> {
 
     try {
       final response = await http.post(
-        Uri.parse('http://12.10.8.247/pamsimas/api/pelanggan/login.php'),
+        Uri.parse('http://e-pamsimas.polbeng.web.id/web_pamsimas/api/pelanggan/login.php'),
         body: jsonEncode({
           // Kunci 'email' dikirim ke API, sesuai dengan kode backend Anda
           'email': emailController.text,
